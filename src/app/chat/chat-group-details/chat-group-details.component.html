@@ -1,0 +1,61 @@
+<div class="container">
+  <br>
+  <br>
+  <div class="row" style="text-align:center">
+
+    <div class="col-12">
+
+
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <strong>Chat Group Name : {{roomName}}</strong>
+          </h3>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Members</h4>
+          <hr>
+          <div *ngFor="let member of members">
+            <div>{{member.name}}</div>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div *ngIf="admin">
+              <h4 class="card-title">Admin</h4>
+              <hr>      
+                <div>{{admin.name}}</div>
+              <br>
+              <hr>
+              <br>
+          </div>
+          
+          
+          
+          <div class="row">
+            <div class="col-md-6">
+              <a class="btn btn-primary" [routerLink]="['/editGroupDetails',receiverId]">Edit</a>
+            </div>
+
+            <br><br>
+
+            <div class="col-md-6">
+              <a class="btn btn-warning" (click)="goBackToPreviousPage()">Go Back </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+  <hr>
+
+
+
+</div>

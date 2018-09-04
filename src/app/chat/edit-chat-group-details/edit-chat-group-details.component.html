@@ -1,0 +1,85 @@
+<!--
+<div class="input-group mb-3">
+  
+  <input #userName1="ngModel" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]='roomName' required>
+  <div [hidden]="userName1.pristine || userName1.valid" class="alert alert-danger" role="alert">
+    Group Name Required
+  </div>
+  <button type="button" class="btn btn-primary" (click)="saveChatRoomName()">Save</button>
+</div>
+-->
+<!--
+<div class="container">
+  <h3>Edit Chat Room</h3>
+  <div class="row" style="text-align:left">
+    <div class="col-md-3 input-group">
+
+
+
+        <div>
+          <label>Name Room Title</label>
+          <input #userName1="ngModel" type="text" class="form-control" placeholder="Enter Room Name" aria-label="RoomName" aria-describedby="basic-addon1" [(ngModel)]='roomName' required>
+        </div>
+
+        <div [hidden]="userName1.valid || userName1.pristine" class="alert alert-danger" role="alert">
+          Room name is required
+        </div>  
+        
+
+        <button type="submit" class="btn btn-default" (click)="saveChatRoomName()">Save Changes</button>
+
+    </div>
+
+  </div>
+
+</div>
+-->
+
+<div class="container">
+  <br>
+  <br>
+  <div class="row" style="text-align:center">
+
+    <div class="col-12">
+
+
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <strong>
+
+              <div>
+                <label>Group Name</label>
+                <input #userName1="ngModel" type="text" class="form-control" placeholder="Enter Group Name" aria-label="RoomName" aria-describedby="basic-addon1"
+                  [(ngModel)]='roomName' required>
+              </div>
+
+              <div [hidden]="userName1.valid || userName1.pristine" class="alert alert-danger" role="alert">
+                Group name is required
+              </div>
+
+
+            </strong>
+          </h3>
+        </div>
+        <div class="card-body row">
+
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-default" (click)="saveChatRoomName()">Save Changes</button>
+          </div>
+
+          <div class="col-md-6">
+            <a class="btn btn-warning" (click)="goBackToPreviousPage()">Go Back </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+</div>
