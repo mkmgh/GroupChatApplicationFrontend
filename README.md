@@ -1,27 +1,32 @@
 # GroupChatAppFrontend
 
+
+		#Login Page
+
+		    -- This is the first page to be loaded .
+		    -- If new to application you can redirect to signup page by choosing signup option from navbar.
+		    -- To get in to the GroupChatApp use your Email Id and Password to login.
+		    
+		#SignUp Page
+
+		    -- This page will have the form to sign up to the Group Chat App.
+		    -- You need to fill all the feilds and then click SignUp button which will then redirect you to Login page if Succesfull.
+
+		#Chat Page
+
+		    -- This page will display all the available chat groups joined as well as not joined.
+		    -- user have to join the group group first to see then send the message in chat group.
+		    -- logout button will logout the user from GroupChatApp.
+		    -- To create a group provide a name and hit the create group button.
+		    -- To send invite to a friend for joining a group you should be part of that group.
+		    -- To send invite click on options menu on top right corner after group name then put the email Id of Friend and click the send Invite button which will send the invite.
+		    -- To join a group click on group grame which is to join and then click on Join Button which will add you to the group.
+		    -- user can also see the deatils of the group by clicking on option dropdown menu present on top right corner and then clicking on group details option.
+		    -- User can delete the group by clicking on the same option menu and then delete group option.
+		    -- User can Close (mark as inactive) the group by clicking on the same option menu and then close group option. 
+		    -- Inactive and deleted groups will no longer be displayed to user.
+		    -- To send a message in group select the group and then type your message in text area at the right bottom and then click send button or press enter.
+	
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
